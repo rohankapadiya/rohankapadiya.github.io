@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html {
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 body {
+  font-family: "Roboto", sans-serif;
+
   margin: auto;
   background-color: #282a35;
 }
@@ -62,6 +66,7 @@ body {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 5%;
 }
 #school-info {
   margin-bottom: 2%;
@@ -70,6 +75,14 @@ body {
   display: grid;
   grid-template-columns: 30% 70%;
   color: #ffffff;
+}
+table,
+th,
+td {
+  padding: 5px;
+}
+table {
+  border-spacing: 15px;
 }
 #div1 {
   margin: auto;
@@ -81,6 +94,9 @@ body {
   text-align: left;
   padding: auto;
   color: #1f618d;
+}
+#submit {
+  float: right;
 }
 tbody tr:nth-child(even) {
   background: none;
@@ -95,6 +111,7 @@ img {
   .second-section {
     display: grid;
     grid-template-columns: auto;
+    padding-bottom: 10%;
   }
 }
 
@@ -103,9 +120,6 @@ img {
   height: 0;
 }
 
-/* .second-section {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} */
 .edu_div {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #d5f5e3;
@@ -157,6 +171,7 @@ input {
 }
 
 .nameHead {
+  font-family: "Rubik Dirt", cursive;
   font-size: 50px;
   text-align: center;
   margin-bottom: 0px;
