@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Assessment</title>
+
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/palettelist.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+ 
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="prf-bg">
+    <section class="first-section">
+      <div class="div-img"><img src="./images/Rohan.jpg" alt="Rohan's image" class="rimg"/></div>
+      
+      <p class="nameHead">Rohan Kapadiya</p>
+      <p class="sub-head">Full Stack Developer, Software Engineer</p>
+      <div class="prf-btn">
+      <a href="./resume/resume.pdf" download><button  class="button button2 fa fa-download"> Resume</button></a>
+      <a href="#contact-me-form"><button class="button button5">Contact Me</button></a>
+    </div>
+    </section>
+    </div>
+
+
+
+
+ <div class="sec-content">
+    <div class="second-section">
+
+      <div id="leftdiv">
+        <h2>About Me and Academic Honesty</h2>
+        <cite
+          >I declare that my assessment is wholly my own work in accordance with
+          Seneca Academic Policy. No part of this assessment has been copied
+          manually or electronically from any other source (including web sites)
+          except for the information supplied by the WEB222 instructors and / or
+          made available in this assessment for my use. I also declare that no
+          part of this assignment has been distributed to other students.</cite
+        >
+        <p><strong>Date:</strong>08/09/2022</p>
+     
+      </div>
+      <div id="rightdiv">
+        <h2>Basic Information</h2>
+        <table id="information">
+          <tr>
+            <th>Age:</th>
+            <td>19</td>
+          </tr>
+          <tr>
+            <th>EMAIL:</th>
+            <td>rskapadiya@myseneca.ca</td>
+          </tr>
+          <tr>
+            <th>LANGUAGE::</th>
+            <td>English, Hindi, Gujarati</td>
+          </tr>
+          <tr>
+            <th>CLASS SECTION::</th>
+            <td>NEE</td>
+          </tr>
+          <tr>
+            <th>STUDENT ID:</th>
+            <td>149427205</td>
+          </tr>
+          <tr>
+            <th>INSTRUCTOR:</th>
+            <td>prof. Noman Atique</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+</div>  
+
+
+
+
+
+    <div class="third-section">
+      <h2 style="text-align: center; color: #ffffff;">Education</h2>
+      <div id="school-info" class="edu_div">
+        <div id="div1">
+          <p>2022 - 2023(expected)</p>
+          <h3>Post-secondary</h3>
+        </div>
+        <div id="div2">
+          <h3>Post-secondary</h3>
+          <strong>SENECA COLLEGE</strong>
+          <p>Learning new programming skills with the latest technology.</p>
+          <p>Learned C, HTML, CSS, and many languages.</p>
+        </div>
+      </div>
+
+      <div id="school-info" class="edu_div">
+        <div id="div1">
+          <p>2017 - 2020</p>
+          <h3>Post-secondary</h3>
+        </div>
+        <div id="div2">
+          <h3>Post-secondary</h3>
+          <strong>Tapi Diploma Engineering College</strong>
+          <p>Completed this course with distinction.</p>
+          <p>Starting my career as a programmer.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+<div class="main-con" id="contact-me-form">
+ <h1 class="con-txt"> Contact Me</h1>
+    <div class="contact-container" >
+ 
+      <form action="https://httpbin.org/post" method="post">
+
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" placeholder="Your Full Name...." required/><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" placeholder="Your Email..." required/><br />
+        <label for="address">Address:</label><br />
+        <input type="textarea" id="address" name="address" placeholder="Your Address..." required/><br />
+
+        <label for="city">City:</label><br />
+        <select id="city" name="city" required>
+          <option value="Toronto">Toronto</option>
+          <option value="Vancouver">Vancouver</option>
+          <option value="Montreal">Montreal</option>
+          <option value="Niagara Falls">Niagara Falls</option>
+          <option value="Victoria">Victoria</option>
+        </select>
+
+        <label for="zipcode">Zipcode:</label><br />
+        <input type="textarea" id="zipcode" name="zipcode" pattern="^[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z] ?\d[ABCEGHJ-NPRSTV-Z]\d" placeholder="XYZ XYZ" required /><br />
+
+<br />
+        <label for="about">What this is about:</label><br />
+        <input type="radio" id="question" name="about" onclick="check2()" required>Question</input>
+        <input type="radio" id="comment" name="about" onclick="check2()"  required>Comment</input>
+        <input type="radio" id="hiring" name="about" onclick="check()"  required>Hiring</input>
+        <div id="here"><p></p></div>
+        <br />
+        <label for="message">Message:</label>
+        <textarea id="message " name="message " rows="5" cols="50"  required></textarea> <br/>
+        <input type="submit" class="sub-btn">
+        <input value="Reset" type="reset" class="btn-reset">
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="cus-footer">
+   <h2>Rohan Kapadiya</h2> <br/>
+    <p>Made with Love By Rohan!<br/>
+    Copyright© 2022</p>
+  </div>
+  </body>
+</html>

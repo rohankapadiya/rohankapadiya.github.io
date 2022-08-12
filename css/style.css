@@ -1,0 +1,275 @@
+html {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  margin: auto;
+  background-color: #282a35;
+}
+.first-section {
+  min-height: 100vh;
+  color: #ffffff;
+
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.prf-bg {
+  background-image: url("../images/prf-bg.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sec-content {
+  color: #ffffff;
+  background-color: #117a65;
+}
+.second-section {
+  padding: 2%;
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+}
+
+#leftdiv {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#rightdiv {
+  padding-left: 5%;
+}
+#information {
+  border-collapse: collapse;
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border: none;
+}
+#information th {
+  text-align: left;
+}
+#information td {
+  text-align: left;
+}
+.third-section {
+  margin-top: 5%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#school-info {
+  margin-bottom: 2%;
+  padding: 2%;
+  border: 2px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  color: #ffffff;
+}
+#div1 {
+  margin: auto;
+  text-align: center;
+  padding: auto;
+  color: #1f618d;
+}
+#div2 {
+  text-align: left;
+  padding: auto;
+  color: #1f618d;
+}
+tbody tr:nth-child(even) {
+  background: none;
+}
+img {
+  width: 370px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+  .second-section {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+.error_verify {
+  visibility: hidden;
+  height: 0;
+}
+
+.second-section {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.edu_div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #d5f5e3;
+  border-radius: 8px;
+}
+
+.div-form {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #5a249e;
+  height: 600px;
+}
+.main-form {
+  text-align: center;
+  color: #ffffff;
+}
+input {
+  margin-top: 10px;
+}
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  font-style: normal;
+
+  border-radius: 10px;
+}
+.button2 {
+  background-color: white;
+  color: black;
+
+  font-size: 15px;
+}
+
+.button2:hover {
+  background-color: #1266f1;
+  color: white;
+}
+
+.button5 {
+  background-color: white;
+  color: #2e4053;
+
+  font-size: 15px;
+}
+
+.button5:hover {
+  background-color: #2e4053;
+  color: white;
+}
+
+.nameHead {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.sub-head {
+  text-align: center;
+  margin-top: 0%;
+}
+
+.rimg {
+  border-radius: 8px;
+  margin-top: 100px;
+}
+.sub-btn {
+  background-color: #f7345e;
+  color: #ffffff;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  border: 0px;
+  display: inline-block;
+}
+
+.sub-btn:hover {
+  background-color: #ffffff;
+  color: #f7345e;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.btn-reset {
+  background-color: #5ca1e1;
+  color: #ffffff;
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  border: 0px;
+  display: inline-block;
+}
+
+.btn-reset:hover {
+  background-color: #ffffff;
+  color: #5ca1e1;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.div-img {
+  display: flex;
+  justify-content: center;
+}
+
+.prf-btn {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[list="city"],
+input[type="textarea"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.main-con {
+  background-color: #1b4f72;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.contact-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.con-txt {
+  color: #ffffff;
+  text-align: center;
+}
+.cus-footer {
+  color: #ffffff;
+  text-align: center;
+  height: 150px;
+}
