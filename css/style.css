@@ -23,8 +23,8 @@ body {
   background-size: cover;
 }
 .sec-content {
-  color: #ffffff;
-  background-color: #117a65;
+  color: #000000;
+  background-color: #d6eaf8;
 }
 .second-section {
   padding: 2%;
@@ -34,7 +34,7 @@ body {
 
   margin-left: auto;
   margin-right: auto;
-  height: 400px;
+  height: auto;
 }
 
 #leftdiv {
@@ -103,65 +103,55 @@ img {
   height: 0;
 }
 
-.second-section {
+/* .second-section {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+} */
 .edu_div {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #d5f5e3;
   border-radius: 8px;
 }
 
-.div-form {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #5a249e;
-  height: 600px;
-}
-.main-form {
-  text-align: center;
-  color: #ffffff;
-}
 input {
   margin-top: 10px;
 }
-.button {
+.main-btn {
   background-color: #4caf50;
-  border: none;
+
   color: white;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
   margin: 4px 2px;
-  transition-duration: 0.4s;
+  transition-duration: 0.5s;
   cursor: pointer;
-  width: 150px;
+  width: 170px;
   height: 50px;
-  font-style: normal;
-
-  border-radius: 10px;
+  border: 0px;
+  border-radius: 17px;
 }
-.button2 {
+.btn1-effect {
   background-color: white;
   color: black;
 
   font-size: 15px;
 }
 
-.button2:hover {
+.btn1-effect:hover {
   background-color: #1266f1;
   color: white;
 }
 
-.button5 {
+.btn2-effect {
   background-color: white;
   color: #2e4053;
 
   font-size: 15px;
 }
 
-.button5:hover {
+.btn2-effect:hover {
   background-color: #2e4053;
   color: white;
 }
@@ -229,27 +219,41 @@ input[list="city"],
 input[type="textarea"],
 select,
 textarea {
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
   resize: vertical;
 }
 
 input[type="submit"] {
   background-color: #04aa6d;
-  color: white;
-  padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  color: white;
+  padding: 12px 20px;
 }
 
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #f5b7b1;
+}
+
+input[type="reset"] {
+  background-color: #1b4f72;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  padding: 12px 20px;
+}
+
+input[type="reset"]:hover {
+  background-color: #f9e79f;
+  color: #000000;
 }
 .main-con {
   background-color: #1b4f72;
@@ -257,10 +261,11 @@ input[type="submit"]:hover {
   padding-bottom: 20px;
 }
 .contact-container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
   max-width: 1024px;
+  border-radius: 5px;
+  color: #1b4f72;
+  background-color: #ebf5fb;
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
 }
