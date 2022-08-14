@@ -4,6 +4,7 @@ function enable() {
   salaryDiv.innerHTML = ` <label for="salary">Salary:</label><br /> <input type="number" id="salary" name="salary" min="15" max="30" required/>`;
   document.getElementById("here").appendChild(salaryDiv);
 }
+
 function disable() {
   salaryDiv.parentNode.removeChild(salaryDiv);
   /*
