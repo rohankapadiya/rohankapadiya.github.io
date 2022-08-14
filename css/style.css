@@ -1,66 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt&family=Roboto+Mono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 html {
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Mono", monospace;
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", sans-serif;
-
+  font-family: "Roboto Mono", monospace;
   margin: auto;
   background-color: #282a35;
 }
-.first-section {
+.main-page {
   min-height: 100vh;
   color: #ffffff;
-
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
 }
 .prf-bg {
   background-image: url("../images/prf-bg.jpg");
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .sec-content {
   color: #000000;
-  background-color: #d6eaf8;
+  background-image: url(../images/bg5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .second-section {
-  padding: 2%;
-  max-width: 1024px;
   display: grid;
   grid-template-columns: 50% 50%;
-
   margin-left: auto;
   margin-right: auto;
+
   height: auto;
+  padding: 2%;
+  padding-bottom: 3%;
+  max-width: 1024px;
 }
 
 #leftdiv {
   padding-left: 10%;
-  padding-right: 10%;
 }
 #rightdiv {
-  padding-left: 5%;
+  padding-left: 10%;
 }
 #information {
-  border-collapse: collapse;
   width: 100%;
   padding-left: 3%;
   padding-right: 3%;
   border: none;
+  border-collapse: collapse;
 }
-#information th {
-  text-align: left;
-}
-#information td {
-  text-align: left;
-}
+
 .third-section {
   margin-top: 5%;
   max-width: 1024px;
@@ -75,6 +72,12 @@ body {
   display: grid;
   grid-template-columns: 30% 70%;
   color: #ffffff;
+}
+#information th {
+  text-align: left;
+}
+#information td {
+  text-align: left;
 }
 table,
 th,
@@ -107,21 +110,7 @@ img {
   border-radius: 8px;
 }
 
-@media screen and (max-width: 1024px) {
-  .second-section {
-    display: grid;
-    grid-template-columns: auto;
-    padding-bottom: 10%;
-  }
-}
-
-.error_verify {
-  visibility: hidden;
-  height: 0;
-}
-
 .edu_div {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #d5f5e3;
   border-radius: 8px;
 }
@@ -130,44 +119,36 @@ input {
   margin-top: 10px;
 }
 .main-btn {
-  background-color: #4caf50;
-
+  width: 175px;
+  height: 50px;
+  border: 0px;
+  border-radius: 17.5px;
   color: white;
-  padding: 16px 32px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
   margin: 4px 2px;
   transition-duration: 0.5s;
   cursor: pointer;
-  width: 170px;
-  height: 50px;
-  border: 0px;
-  border-radius: 17px;
 }
 .btn1-effect {
-  background-color: white;
   color: black;
-
+  background-color: white;
   font-size: 15px;
 }
 
 .btn1-effect:hover {
-  background-color: #1266f1;
   color: white;
+  background-color: #0e4397;
 }
 
 .btn2-effect {
-  background-color: white;
   color: #2e4053;
-
+  background-color: white;
   font-size: 15px;
 }
 
 .btn2-effect:hover {
-  background-color: #2e4053;
   color: white;
+  background-color: #000000;
 }
 
 .nameHead {
@@ -187,34 +168,42 @@ input {
   margin-top: 100px;
 }
 .sub-btn {
-  background-color: #f7345e;
-  color: #ffffff;
-  width: 100px;
-  height: 40px;
-  border-radius: 8px;
+  font-size: 17px;
+  background-color: #008cba;
+  color: white;
   border: 0px;
+  width: 120px;
+  height: 45px;
+  border-radius: 8px;
+  padding-left: auto;
+  padding-right: auto;
   display: inline-block;
 }
 
 .sub-btn:hover {
-  background-color: #ffffff;
-  color: #f7345e;
+  background-color: white;
+  color: black;
+  border: 2px solid #008cba;
   transition-duration: 0.4s;
   cursor: pointer;
 }
 .btn-reset {
-  background-color: #5ca1e1;
-  color: #ffffff;
-  width: 100px;
-  height: 40px;
+  font-size: 17px;
+  background-color: #9e4486;
+  color: white;
+  width: 120px;
+  height: 45px;
+  padding-left: auto;
+  padding-right: auto;
   border-radius: 8px;
   border: 0px;
   display: inline-block;
 }
 
 .btn-reset:hover {
-  background-color: #ffffff;
-  color: #5ca1e1;
+  background-color: white;
+  color: black;
+  border: 2px solid #9e4486;
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -232,57 +221,43 @@ input[type="text"],
 input[type="email"],
 input[list="city"],
 input[type="textarea"],
+input[type="number"],
 select,
 textarea {
-  box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid rgb(204, 204, 204);
   resize: vertical;
+  box-sizing: border-box;
 }
 
-input[type="submit"] {
-  background-color: #04aa6d;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  color: white;
-  padding: 12px 20px;
+h1 {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 4rem;
+  margin-top: 0%;
+  text-align: center;
+}
+#about-heading {
+  padding-top: 2%;
+  margin-bottom: 0;
 }
 
-input[type="submit"]:hover {
-  background-color: #f5b7b1;
-}
-
-input[type="reset"] {
-  background-color: #1b4f72;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  color: white;
-  padding: 12px 20px;
-}
-
-input[type="reset"]:hover {
-  background-color: #f9e79f;
-  color: #000000;
-}
 .main-con {
   background-color: #1b4f72;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .contact-container {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1024px;
   border-radius: 5px;
   color: #1b4f72;
   background-color: #ebf5fb;
   padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .con-txt {
   color: #ffffff;
@@ -292,4 +267,20 @@ input[type="reset"]:hover {
   color: #ffffff;
   text-align: center;
   height: 150px;
+}
+
+@media screen and (max-width: 1024px) {
+  .second-section {
+    display: grid;
+    grid-template-columns: auto;
+    padding-bottom: 10%;
+  }
+  .third-section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .main-con {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }

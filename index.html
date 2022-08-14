@@ -18,7 +18,7 @@
   </head>
   <body>
     <div class="prf-bg">
-    <section class="first-section">
+    <section class="main-page">
       <div class="div-img"><img src="./images/Rohan.jpg" alt="Rohan's image" class="rimg"/></div>
       
       <p class="nameHead">Rohan Kapadiya</p>
@@ -34,8 +34,9 @@
 
 
  <div class="sec-content">
+  <h1 id="about-heading">About</h1>
     <div class="second-section">
-
+     
       <div id="leftdiv">
         <h2>About Me and Academic Honesty</h2>
         <cite
@@ -131,36 +132,32 @@
         <input type="textarea" id="address" name="address" placeholder="Your Address..." required/><br />
 
         <label for="city">City:</label><br />
-        <select id="city" name="city" required>
-          <option value="Toronto">Toronto</option>
-          <option value="Vancouver">Vancouver</option>
-          <option value="Montreal">Montreal</option>
-          <option value="Niagara Falls">Niagara Falls</option>
-          <option value="Victoria">Victoria</option>
-        </select>
+        <datalist id="city">
+          <option value="Toronto"></option>
+          <option value="Vancouver"></option>
+          <option value="Montreal"></option>
+          <option value="Niagara Falls"></option>
+          <option value="Victoria"></option>
+        </datalist>
+        <input list="city" name="city" id="city" placeholder="City..."required/>
 
         <label for="zipcode">Zipcode:</label><br />
         <input type="textarea" id="zipcode" name="zipcode" pattern="^[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z] ?\d[ABCEGHJ-NPRSTV-Z]\d" placeholder="XYZ XYZ" required /><br />
 
 <br />
         <label for="about">What this is about:</label><br />
-        <input type="radio" id="question" name="about" onclick="check2()" required>Question</input>
-        <input type="radio" id="comment" name="about" onclick="check2()"  required>Comment</input>
-        <input type="radio" id="hiring" name="about" onclick="check()"  required>Hiring</input>
+        <input type="radio" id="question" name="about" onclick="disable()" required>Question</input>
+        <input type="radio" id="comment" name="about" onclick="disable()"  required>Comment</input>
+        <input type="radio" id="hiring" name="about" onclick="enable()"  required>Hiring</input>
         <div id="here"><p></p></div>
         <br />
         <label for="message">Message:</label>
         <textarea id="message " name="message " rows="5" cols="50"  required></textarea> <br/>
         <input value="Reset" type="reset" class="btn-reset">
         <input id="submit" type="submit" class="sub-btn">
-        
-        
       </form>
     </div>
   </div>
-
-
-
   <div class="cus-footer">
    <h2>Rohan Kapadiya</h2> <br/>
     <p>Made with Love By Rohan!<br/>

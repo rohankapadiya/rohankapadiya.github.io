@@ -1,11 +1,11 @@
-var div = document.createElement("div");
+var salaryDiv = document.createElement("div");
 
-function check() {
-  div.innerHTML = ` <label for="salary">Salary:</label><br /> <input type="number" id="salary" name="salary" min="15" max="30" required/>`;
-  document.getElementById("here").appendChild(div);
+function enable() {
+  salaryDiv.innerHTML = ` <label for="salary">Salary:</label><br /> <input type="number" id="salary" name="salary" min="15" max="30" required/>`;
+  document.getElementById("here").appendChild(salaryDiv);
 }
-function check2() {
-  div.parentNode.removeChild(div);
+function disable() {
+  salaryDiv.parentNode.removeChild(salaryDiv);
   /*
   var element = document.getElementById("salary");
   element.parentNode.removeChild(element);
