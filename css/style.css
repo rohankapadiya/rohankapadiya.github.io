@@ -46,10 +46,13 @@ body {
 }
 
 #leftdiv {
-  padding-left: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 #rightdiv {
-  padding-left: 10%;
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 #information {
   width: 100%;
@@ -283,5 +286,11 @@ h1 {
   .main-con {
     padding-left: 5%;
     padding-right: 5%;
+  }
+  #div1 {
+    padding-left: 5%;
+  }
+  #div2 {
+    padding-left: 10%;
   }
 }
