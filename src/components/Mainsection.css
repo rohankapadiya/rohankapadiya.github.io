@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+ 
+ .Mainsection{
+  display: flex;
+        width: 100%;        
+ }
+ .home-page-img{
+  width: 40%;
+ }
+ .Home-page{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+
+  
+ }
+ .Home-page .first-p{
+  margin-top: 10%;
+  font-size: 3rem;
+}
+.Home-page p{
+  font-size: 10vw;
+  font-weight: 800;
+  margin: 3%  0 0 0 ;
+  line-height: 100%;  
+  text-transform:uppercase;
+
+  background: -webkit-linear-gradient(0deg, #FFF, #03a9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}    
+.Home-page .content{
+}
+.Home-page .content h2{
+  position: absolute;
+  color: #fff;
+  transform: translate(-1%,-60%);
+  font-size: 12vw;
+}
+
+.Home-page .content h2:nth-child(2){
+  color: transparent;
+  -webkit-text-stroke: 5px #FFF;
+}
+.Home-page .content h2:nth-child(1){
+  color: #03a9f4;
+  animation: animateh2 4s ease-in-out infinite;
+}
+@keyframes animateh2{
+  0%,100%{
+    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50%{
+    clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+
+
+.Home-page .third-p{
+  font-size: 4rem;
+  margin-top: 30%;
+}
+.Home-page .forth-p{
+  width:60%;
+  text-transform: capitalize;  
+  font-size: 1rem;
+  margin-top: 1%;
+}
+    @keyframes typing {
+        0.0000%, 33.0463% { content: ""; }
+        1.1395%, 31.9068% { content: "w"; }
+        2.2791%,  30.7673% { content: "we"; }
+        3.4186%, 29.6278% { content: "web"; }
+        4.5581%, 28.4883% { content: "web "; }
+        5.6977%, 27.3488% { content: "web d"; }
+        6.8372%, 26.2093% { content: "web de"; }
+        7.9767%, 25.0698%{ content: "web dev"; }
+        9.1163%, 23.9302% { content: "web deve"; }
+        10.2558%, 22.7907%{ content: "web develo"; }
+        11.395%,  21.6512%{ content: "web develop"; }
+        12.5345%, 20.5116% { content: "web develope"; }
+        13.647%, 19.3721% { content: "web developer"; }
+      
+    
+        37.0%, 96% { content: ""; }
+        38.5%, 95% { content: "s"; }
+        40.0%,  93.5% { content: "so"; }
+        41.5%, 92% { content: "sof"; }
+        43.0%, 90.5% { content: "soft"; }
+        44.5%, 89% { content: "softw"; }
+        45.0%, 87.5% { content: "softwa"; }
+        47.5%, 85.5%{ content: "softwar"; }
+        48.0%, 84.5% { content: "software"; }
+        50.5%, 82%{ content: "software "; }
+        52.5%,  81%{ content: "software d"; }
+        53.0%, 79.5% { content: "software de"; }
+        55.5%, 78% { content: "software dev"; }
+        56.0%, 77% { content: "software deve"; }
+        58.5%, 75.5% { content: "software devel"; }
+        59.0%,74% { content: "software develo"; }
+        62.5%, 73% { content: "software develop"; }
+        63.0%, 72% { content: "software develope"; }
+        64.5%, 70% { content: "software developer"; }
+       
+      }
+      
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        40% { opacity: 0; }
+      }
+      
+      .typewriter {
+        --caret: currentcolor;
+      }
+      
+      .typewriter::before {
+        content: "";
+        animation: typing 10.5s infinite;
+      }
+      
+      .typewriter::after {
+        content: "";
+        border-right: 1px solid var(--caret);
+        animation: blink 0.5s linear infinite;
+      }
+    
+    
+/**/
+
+@media only screen and (max-width: 1000px) {
+  .Mainsection{
+    margin-top: -20%;
+    display: grid;
+  }
+  .home-page-img{
+    width: 100%;
+    height: 50vh;
+  }
+  .Home-page{
+    width: 100%;
+    height: 100vh;
+
+  }
+  .Home-page p{
+        font-size: 3rem;
+    line-height: 200%;
+    width: 100%;
+    text-align: center;
+  }
+  .Home-page .content h2 {
+    font-size: 20vw;
+    margin-left: 3%;
+    text-align: center;
+  }
+  p { margin: 0}
+} 
+
+
+
+
+
+
+.homepage-container {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.homepage-container .box {
+  width: 50vmin;
+  height: 50vmin;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    transform: scale(1.42);
+  }
+}
+
+.homepage-container .spin-container {
+  width: 100%;
+  height: 100%;
+  animation: spin 12s ease-in-out infinite alternate;
+  position: relative;
+}
+
+.homepage-container .shape {
+  width: 100%;
+  height: 100%;
+  transition: border-radius 1s ease-out;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 8s ease-in-out infinite both alternate;
+  position: absolute;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.homepage-container .bd {
+  width: 142%;
+  height: 142%;
+  position: absolute;
+  left: -21%;
+  top: -21%;
+  background: url(./image2.png);
+  object-fit: cover;
+  background-size: 100%;
+  background-position: center center;
+  display: flex;
+  color: #003;
+  font-size: 5vw;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  animation: spin 12s ease-in-out infinite alternate-reverse;
+  opacity: 1;
+  z-index: 2;
+}
+
+@keyframes morph {
+  0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} 
+  100% {border-radius: 40% 60%;} 
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
