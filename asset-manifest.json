@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/rohankapadiya/static/css/main.1c8e0817.css",
-    "main.js": "/rohankapadiya/static/js/main.96988221.js",
-    "static/media/image2.png": "/rohankapadiya/static/media/image2.8142510472ac49b16659.png",
-    "static/media/dallas.webp": "/rohankapadiya/static/media/dallas.515fa077a902999f7a98.webp",
-    "static/media/sanfrancisco.webp": "/rohankapadiya/static/media/sanfrancisco.08608ad92dd64f73c620.webp",
-    "static/media/austin.webp": "/rohankapadiya/static/media/austin.890f7d2610685cc92fc7.webp",
-    "static/media/beijing.webp": "/rohankapadiya/static/media/beijing.28d528628851399ff9bd.webp",
-    "static/media/newyork.webp": "/rohankapadiya/static/media/newyork.824150ab27c32d6ccecd.webp",
-    "static/media/rk-logo.png": "/rohankapadiya/static/media/rk-logo.9ac52da1e4959c7a5581.png",
-    "index.html": "/rohankapadiya/index.html",
-    "main.1c8e0817.css.map": "/rohankapadiya/static/css/main.1c8e0817.css.map",
-    "main.96988221.js.map": "/rohankapadiya/static/js/main.96988221.js.map"
+    "main.css": "/static/css/main.85b3eddf.css",
+    "main.js": "/static/js/main.bfd0aca2.js",
+    "static/media/image2.png": "/static/media/image2.8142510472ac49b16659.png",
+    "static/media/dallas.webp": "/static/media/dallas.515fa077a902999f7a98.webp",
+    "static/media/sanfrancisco.webp": "/static/media/sanfrancisco.08608ad92dd64f73c620.webp",
+    "static/media/austin.webp": "/static/media/austin.890f7d2610685cc92fc7.webp",
+    "static/media/beijing.webp": "/static/media/beijing.28d528628851399ff9bd.webp",
+    "static/media/newyork.webp": "/static/media/newyork.824150ab27c32d6ccecd.webp",
+    "static/media/rk-logo.png": "/static/media/rk-logo.9ac52da1e4959c7a5581.png",
+    "index.html": "/index.html",
+    "main.85b3eddf.css.map": "/static/css/main.85b3eddf.css.map",
+    "main.bfd0aca2.js.map": "/static/js/main.bfd0aca2.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c8e0817.css",
-    "static/js/main.96988221.js"
+    "static/css/main.85b3eddf.css",
+    "static/js/main.bfd0aca2.js"
   ]
 }
